@@ -196,11 +196,24 @@
         <div class="container" style="max-width: 800px" >
           <h1 style="">Abstract</h1>
           <p  style="text-align: justify; font-size: 17px;margin-bottom:0.5cm;">
-            CLIP has enabled new and exciting joint vision-language applications, one of which is open-vocabulary 
+<!--             CLIP has enabled new and exciting joint vision-language applications, one of which is open-vocabulary 
             segmentation, which can locate any segment given an arbitrary text query. Our paper asks the next question: 
             can we discover semantic segments without user guidance in the form of text queries or predefined classes 
             and label them in natural language all automatically? We propose a novel problem <b> zero-guidance segmentation </b> 
             and the first baseline that leverages two pretrained generalist models, DINO and CLIP, to solve this problem 
+            without any fine-tuning or segmentation dataset. The general idea is to first segment an image into small 
+            over-segments, encode them into CLIP’s visual-language space, translate them into text labels, and merge 
+            semantically similar segments together. The key challenge, however, is how to encode a visual segment into a 
+            segment-specific embedding that balances global and local context information, both useful for recognition. 
+            Our main contribution is a novel attention-masking technique that balances the two contexts by analyzing the 
+            attention layers inside CLIP. We also introduce several metrics for the evaluation of this new task. With 
+            CLIP’s innate knowledge, our method can precisely locate the Mona Lisa painting among a museum crowd. -->
+            
+            CLIP has enabled new and exciting joint vision-language applications, one of which is open-vocabulary 
+            segmentation, which can locate any segment given an arbitrary text query. In our research, we ask whether it 
+            is possible to discover semantic segments without any user guidance in the form of text queries or predefined 
+            classes, and label them using natural language automatically? We propose a novel problem <b> zero-guidance segmentation </b> 
+            and the first baseline that leverages two pre-trained generalist models, DINO and CLIP, to solve this problem 
             without any fine-tuning or segmentation dataset. The general idea is to first segment an image into small 
             over-segments, encode them into CLIP’s visual-language space, translate them into text labels, and merge 
             semantically similar segments together. The key challenge, however, is how to encode a visual segment into a 
